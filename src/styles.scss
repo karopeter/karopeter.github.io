@@ -1,0 +1,41 @@
+:root {
+ --color-primary: #eb2f64;
+ --color-primary-light: #FF3366;
+ --color-primary-dark: #BA265D;
+}
+
+$bp-largest: 75em;  // 1200px
+$bp-large: 68.75em;   // 1100px
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-large) {
+     font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Open Sans' sans-serif;
+  font-weight: 400;
+  color: #777;
+  line-height: 1.6;
+  background-color: #eb2f64;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
